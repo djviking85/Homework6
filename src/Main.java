@@ -104,13 +104,29 @@ public class Main {
     public static void task9() {
         System.out.println("Задача 9");
         {
-            //
+            //Перепишите решение задачи выше при условии,
+            // что деньги вы откладывать будете не «в банку»,
+            // а в банк под проценты— 12% годовых.
+            // Выведите сумму накоплений за каждый месяц в
+            // консоль вформате: «Месяц…, сумма накоплений равна… рублей».
+            int money = 29000;
+            int total = 0;
+            for (int i = 0; i <=12; i++) {
+                total = total + money;
+                total = total+ total/100;
+                System.out.println( "Месяц… " + i + " , сумма накоплений равна " + total + "… рублей");
+            }
         }
     }
     public static void task10() {
         System.out.println("Задача 10");
         {
-            //
+            //Напишите программу, которая выводит в консоль таблицу умножения на 2
+            int number = 2;
+
+            for (int i = 1; i <= 10; i = i+1) {
+                System.out.println("Таблица умножения " +number+" * " +i+" = " +number*i);
+            }
         }
     }
 
